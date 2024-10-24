@@ -1,0 +1,8 @@
+Hvilke bibs er installeret i IP?
+
+Numpy
+OpenCV - cv2
+Matplotlib
+Scikit-image - skimage
+
+DEN SIDSTE VÆRDI I range() I PYTHON ER IKKE INKLUDERET I LOOPET

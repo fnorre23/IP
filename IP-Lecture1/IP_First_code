@@ -1,0 +1,21 @@
+import cv2 # for OpenCV
+from skimage import io # for algorithms for image processing
+import matplotlib.pylab as plt # for visualizations
+
+
+url = "https://upload.wikimedia.org/wikipedia/en/7/7d/Lenna_%28test_image%29.png"
+imRGB = io.imread(url) #reads in RGB
+lenaImg = cv2.cvtColor(imRGB, cv2.COLOR_RGB2BGR)  #converts RGB to BGR
+
+plt.imshow(imRGB) #uses RGB - (imshow gør billedet klar til visning, men viser ikke billedet uden plt.show())
+plt.show() #shows the image
+
+#BRUG TIL ASSIGNMENT 1
+#Greyscale opgave
+#cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) #converts BGR to grayscale
+
+#Red channel opgave
+r = imRGB[:,:,0] #red channel
+plt.imshow(r, cmap='gray') #shows the red channel
+
+
